@@ -175,7 +175,7 @@ export default function PixelItMultiUpload() {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
       // Convertir FileList a array y limitar a 50 archivos
-      const fileArray = Array.from(e.target.files).slice(0, 200)
+      const fileArray = Array.from(e.target.files).slice(0, 50)
       setImages(fileArray)
       // Resetear imágenes pixeladas cuando se seleccionan nuevos archivos
       setPixelatedImages([])
